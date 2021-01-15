@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Funcionarios </title>
+	<link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+	<h1> Funcionarios </h1>
+	
+	<div id="principal">
+		<!-- -->
+		<section>
+			<article class="divisao">
+				<table>
+					<tr th:each = "funcionarios: ${funci}">
+						<td th:text = "${funcionarios.nome}">  </td>
+						<th th:text = "${funcionarios.cargo}">  </th>
+					</tr>
+				</table>				
+			</article>
+		</section>
+		
+		
+		<nav>
+			<a href="cadastro_funcionario.html"> Cadastro de Funcionario </a>
+		</nav>
+	</div>
+</body>
+</html>

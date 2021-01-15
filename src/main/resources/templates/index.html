@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Funcionarios </title>
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="javascript/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="javascript/index.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header_elements">
+			<a href="/">
+				<h4 id="logo"> Colabora </h4>
+			</a>
+		</div>
+	</header>
+	
+	<h1> Funcionarios </h1>
+	
+	<div id="tudo">
+		<div id="principal">
+			<section>
+				<article class="divisao">
+					<h3>  Número de Funcionários <span th th:text = "${numero}"> </span></h3>
+					
+					<table> 
+						<tr>
+							<th style="border: groove 0.5px"> Cargos </th>
+							<td style="border: groove 0.5px" th:each = "cargo: ${cargos}" th:text = "${cargo}"> </td>
+						</tr>
+						<tr>
+							<th style="border: groove 0.5px"> Nº de Funcionários </th>
+							<td style="border: groove 0.5px" th:each = "numCargo:  ${numCargos}" th:text = "${numCargo}"> </td>
+						</tr>
+					</table>
+				</article>
+				
+				<article class="divisao">
+					<h3> Cargos Cadastrados </h3>
+					
+					<table>
+						<tr>
+							<td th:each = "cargo: ${cargos}">
+								<input type="button" th:value="${cargo}" th:attr= onclick=|alerta("${cargo}")| >
+							</td>	
+						</tr>
+					</table>
+					
+					<div id="conteudo"></div>
+				</article>
+			</section>
+			
+			<section>
+				<article class="divisao">
+					<h3> Localizar Cadastrados pelo Id </h3>
+					
+					<table>
+						<tr>
+							<td>
+								<input style="width: 50px;" type="number" min="0" id="acha_id" placeholder="ID" value="">	
+							</td>
+							<td>	
+								<input type="button" value="Procurar" onclick="acha_id()">
+							</td>	
+						</tr>
+					</table>
+						
+					<div id="conteudo2">
+					
+					</div>
+				</article>
+			</section>
+		</div>
+		
+		<nav>
+			<a href="cadastro_funcionario"> Cadastro de Funcionário </a>
+			<a href="atualiza_funcionario"> Atualizar dados do Funcionário </a>
+			<a href="deletar_funcionario"> Deletar Dados do Funcionário </a>
+		</nav>
+	</div>	
+	
+	<footer>
+	
+	</footer>
+</body>
+</html>

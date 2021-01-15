@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Exclusão de Funcionário </title>
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="javascript/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="javascript/deletar_funcionario.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header_elements">
+			<a href="/">
+				<h4 id="logo"> Colabora </h4>
+			</a>
+		</div>
+	</header>
+	
+	<h1> Exclusão de Funcionário </h1>
+	
+	<div id="tudo">
+		<div id="principal">
+			<section>
+				<h3> Procurar pelo nome </h3>
+				
+				<article class="divisao">
+					<table>
+						<tr>
+							<th> <input type="text" class="inputs" id="nome" placeholder="Digite o nome completo" value=""> </th>
+							<th> <input type="button" class="inputs" value="Procurar" style="width: 200px;" onclick="achando_funcionario()"> </th>
+						</tr>
+					</table>
+				</article>
+				
+				<h3> ou procurar pelo ID </h3>
+				
+				<article class="divisao">
+					<table>
+						<tr>
+							<td>
+								<input style="width: 50px;" type="number" min="0" id="acha_id" placeholder="ID" value="">	
+							</td>
+							<td>	
+								<input type="button" value="Procurar" onclick="acha_id()">
+							</td>	
+						</tr>
+					</table>
+				</article>
+			</section>	
+				
+			<section>	
+				<h3> Dados Encontrados </h3>
+				
+				<article class="divisao" style="width: 90%; margin-left: 5%;">
+					<form action="deletando_dados" method="post">
+						<input type="hidden" id="nome1" name="nome1">
+						<input type="text" class="inputs" id="id" name="id" placeholder="id" disabled>
+						<input type="text" class="inputs" id="nome2" name="nome" placeholder="nome" disabled>
+						<input type="text" class="inputs" id="cargo2" name="cargo" placeholder="cargo" disabled>
+						<input type="text" class="inputs" id="dataNascimento" name="dataNascimento" placeholder="Data de nascimento" disabled>
+					
+						<div style="margin-left: 10%; width: 80%;">
+						
+							<h4> Genero </h4>
+							
+							<label> Masculino </label><input type="radio" name="sexo" value="m">
+							<label> feminino </label><input type="radio" name="sexo" value="f">
+						</div>
+						
+						<input type="text" class="inputs" id="dataCadastro" name="dataCadastro" placeholder="Data de Cadastro" disabled>
+						
+						<input type="submit" class="inputs" value="Deletar">
+					</form>
+				</article>
+			</section>
+		</div>
+		
+		<nav>
+			<a href="/"> Início </a>
+			<a href="cadastro_funcionario"> Cadastro de Funcionario </a>
+			<a href="atualiza_funcionario"> Atualizar dados do Funcionário </a>
+		</nav>
+	</div>	
+	
+	<footer>
+	
+	</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Cadastro de Funcionarios </title>
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="javascript/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="javascript/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="javascript/mascara_data.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header_elements">
+			<a href="/">
+				<h4 id="logo"> Colabora </h4>
+			</a>
+		</div>
+	</header>
+	
+	<h1> Cadastro de Funcionários </h1>
+	
+	<div id="tudo">
+		<div id="principal">
+			<section>
+				<article class="divisao">
+					<form action="recebendo_dados" method="post">
+						<input type="text" class="inputs" name="nome" placeholder="Digite o nome completo">
+						<input type="text" class="inputs" name="cargo" placeholder="Cargo">
+						<span style="margin-left: 10%; font-size: 14px; color: #8a0a0a;"> Coloque o cargo sempre no masculino </span>
+						
+						<input type="text" class="inputs" id="dataNascimento" name="dataNascimento" placeholder="Data de nascimento">
+						
+						<div style="margin-left: 10%; width: 80%;">
+							<h4> Genero </h4>
+							
+							<table>
+								<tr>
+									<td> <label> Masculino </label><input type="radio" name="sexo" value="m"> </td> 
+									<td> <label> feminino </label><input type="radio" name="sexo" value="f"> </td>
+								</tr>
+							</table>
+						</div>	
+						
+						<input type="submit" class="inputs" value="Inserir">
+					</form>
+				</article>
+			</section>
+		</div>	
+		
+		<nav>
+			<a href="/"> Início </a>
+			<a href="atualiza_funcionario"> Atualizar dados do Funcionário </a>
+			<a href="deletar_funcionario"> Deletar Dados do Funcionário </a>
+		</nav>
+	</div>	
+	
+	<footer>
+	
+	</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Funcionarios </title>
+	<link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+	<h1> Funcionarios </h1>
+	
+	<div id="principal">
+		<section>
+			<article class="divisao">
+				<h3> Falha ao Excluir cadastro </h3>	
+				
+				<h4> Redirecionando em <span id="num"> 10 </span> </h4>
+				<br/>
+				<input type="button" onclick="document.location.href = 'deletar_funcionario'" value="Ir para a tela de Exclusão de Cadastro">
+			</article>
+		</section>
+		
+		<nav>
+			<a href="cadastro_funcionario"> Cadastro de Funcionario </a>
+		</nav>
+	</div>
+	<script>
+		var num = 9;
+		
+		function intervalo()
+		{
+			if(num > 0)
+			{
+				document.getElementById('num').innerHTML = num; 
+				num--;
+			}
+			else
+			{
+				document.location.href = "deletar_funcionario";	
+			}
+		}
+		
+		setInterval(intervalo, 1000);
+	</script>
+</body>
+</html>

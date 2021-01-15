@@ -1,0 +1,195 @@
+html, body
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	background-color: #e9e6e6;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+header
+{
+	width: 100%; 
+	height: 100px; 
+	background-color: gray;
+}
+
+#header_elements
+{
+	margin-left: 5%; 
+	width: 90%; 
+	height: auto; 
+	overflow: hidden; 
+	margin-bottom: -15px;
+}
+
+#logo
+{
+	float: left;
+	 
+	font-size: 25px; 
+	color: white;	
+}
+
+#logo a
+{
+	text-decoration: none;
+	
+}
+
+#tudo
+{
+	width: 100%;
+	height: auto; 
+	overflow: hidden;
+	padding-top: 25px; 
+	padding-bottom: 25px;
+	min-height: 90%;
+	/*
+	background-color: blue;
+	*/
+}
+
+h1, h2, h3, h4, h5
+{
+	text-align: center;
+}
+
+#principal
+{
+	width: 60%;
+	margin-left: 2.5%;
+	height: auto; 
+	display: inline;
+	float: left;
+	overflow: hidden;
+	padding-top: 25px; 
+	padding-bottom: 25px;
+}
+		
+section, nav
+{
+	width: 100%;
+	background-image: linear-gradient(#aba6a6, #e9e6e6);
+	border-radius: 15px;
+	box-shadow: 5px	5px 10px gray;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;  
+}
+		
+nav
+{
+	width: 25%;
+	margin-right: 2.5%;
+	display: inline;
+	float: right;
+}
+
+nav a
+{
+	display: block;
+	margin-top: 15px;
+	margin-left: 20px;
+	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 1s background-size;	
+	text-decoration: none;
+	color: blue;
+}
+
+nav a:hover
+{
+	background-size: 100% .1em;
+}	
+		
+.divisao
+{
+	margin-top: 25px; 
+	margin-left:10%;
+	width: 80%;
+	height: auto; 
+	overflow: hidden; 
+	padding-top: 15px; 
+	padding-bottom: 15px;
+}
+		
+.inputs
+{
+	margin-left: 10%; 
+	width: 80%;
+	margin-top: 15px;
+	height: 25px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 17px;
+}
+
+input[type="text"], input[type="number"]
+{
+	border: 0.5px gray;
+	background-color: rgba(255, 255, 255, 0.9);
+	background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+	transition: 1s background-size;	
+	color: black;
+}
+
+input[type="text"]:focus, input[type="number"]:focus
+{
+	border: 0.5px gray;
+	outline: 0;
+	background-size: 100% .1em;
+}	
+
+input[type="button"], input[type="submit"]
+{
+	background-color: #6bd25d;
+	color: white;
+	border-radius: 5px;
+}
+	
+
+table
+{
+	margin-left: 10%;
+	width: 80%;
+}
+
+th, td
+{
+	text-align: center;
+	/*
+	border: groove 0.5px
+	*/
+}
+
+footer
+{
+	width: 100%; 
+	height: 200px; 
+	background-color: gray;
+	bottom: 0;
+	
+} 
+
+@media screen and (max-width: 800px)
+{
+	#principal, nav
+	{
+		margin-left: 2.5%;
+		width: 95%;
+		display: block;
+	}
+	
+	nav
+	{
+		margin-right: 0%;
+		float: left;
+	}	
+	
+	.divisao
+	{
+		margin-left:0%;
+		width: 100%;
+	}		
+}
