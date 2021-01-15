@@ -24,6 +24,11 @@ Tela onde será possível cadastrar o nome completo do funcionário, cargo, sexo
 Em ambas as telas, é possível encontrar o funcionário tanto através do nome completo quanto do ID, sendo que na tela de atualização, não é possível alterar nem o ID nem a data de cadastro. Quanto aos dados exibidos na tela de exclusão, não é possível alterar qualquer um dos campos, apenas sendo possível deletar todo o cadastro do funcionário através do botão Deletar.
 
 
+### Acesso ao banco
+
+Como informado no arquivo application.properties, o nome banco é "teste_hibernate", o usuário é "root" e a senha é "Root135135". Caso necessário fazer o projeto em algum outro banco, com outros dados, essas alterações devem ser feitas também no arquivo application.properties
+
+
 ### Tecnologias usadas
 
 No projeto foi utilizado a linguagem de programação Java versão 11, na IDE Eclipse. O projeto segue o padrão MVC através do Spring Boot 2.3.8, projeto Marven.
