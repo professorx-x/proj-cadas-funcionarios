@@ -8,21 +8,25 @@
 <body>
 	<h1> Funcionarios </h1>
 	
-	<div id="principal">
-		<section>
-			<article class="divisao">
-				<h3> Falha ao Excluir cadastro </h3>	
-				
-				<h4> Redirecionando em <span id="num"> 10 </span> </h4>
-				<br/>
-				<input type="button" onclick="document.location.href = 'deletar_funcionario'" value="Ir para a tela de Exclusão de Cadastro">
-			</article>
-		</section>
-		
+	<div id="tudo">
+		<div id="principal">
+			<section>
+				<article class="divisao">
+					<h3> Falha ao Excluir cadastro </h3>	
+					
+					<h4> Redirecionando em <span id="num"> 10 </span> </h4>
+					<br/>
+					<input type="button" onclick="document.location.href = 'deletar_funcionario'" value="Ir para a tela de Exclusão de Cadastro">
+				</article>
+			</section>
+		</div>	
+			
 		<nav>
+			<a href="/"> Início </a>
 			<a href="cadastro_funcionario"> Cadastro de Funcionario </a>
+			<a href="atualiza_funcionario"> Atualizar dados do Funcionário </a>
 		</nav>
-	</div>
+	</div>	
 	<script>
 		var num = 9;
 		
