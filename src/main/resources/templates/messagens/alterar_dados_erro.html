@@ -8,21 +8,24 @@
 <body>
 	<h1> Funcionarios </h1>
 	
-	<div id="principal">
-		<section>
-			<article class="divisao">
-				<h3> Falha na Alteração dos Dados </h3>	
-				
-				<h4> Redirecionando em <span id="num"> 10 </span> </h4>
-				<br/>
-				<input type="button" onclick="document.location.href = 'atualiza_funcionario'" value="Ir para a tela de atualização de dados">
-			</article>
-		</section>
-		
+	<div id="tudo">
+		<div id="principal">
+			<section>
+				<article class="divisao">
+					<h3> Falha na Alteração dos Dados </h3>	
+					
+					<h4> Redirecionando em <span id="num"> 10 </span> </h4>
+					<br/>
+					<input type="button" onclick="document.location.href = 'atualiza_funcionario'" value="Ir para a tela de atualização de dados">
+				</article>
+			</section>
+		</div>	
 		<nav>
+			<a href="/"> Início </a>
 			<a href="cadastro_funcionario"> Cadastro de Funcionario </a>
+			<a href="deletar_funcionario"> Deletar Dados do Funcionário </a>
 		</nav>
-	</div>
+	</div>	
 	<script>
 		var num = 9;
 		
